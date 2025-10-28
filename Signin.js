@@ -35,8 +35,8 @@ if(!emailans){
     let LoginEmail= document.getElementById("email")
     let LoginPass= document.getElementById("password")
 
-    let Storedemail = localStorage.getItem("email")
-    let Storedpass = localStorage.getItem("password")
+    let Storedemail = localStorage.getItem("email", email.value)
+    let Storedpass = localStorage.getItem("password", password.value)
 
     if(LoginEmail.value == Storedemail && LoginPass.value == Storedpass){
     let error =document.getElementById("error")
