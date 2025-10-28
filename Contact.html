@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="icon" type="image/png" href="/Frontend/image/icon1.png">
+<link rel="stylesheet" href="/landing.css">
+<title>Contact us</title>
+</head>
+<body>
+    <nav id="navbar" class="py-2 px-24 flex justify-between items-center bg-black">
+    <a href="/Frontend/landing.html"><h1 class="text-3xl text-zinc-300 font-bold p-6">TutorNest</h1></a>
+    <div class="flex gap-3 px-14 text-white">
+    <a class="hover:bg-zinc-600 transition-all duration-300 rounded px-2 rounded-xl" href="/landing.html">Home</a>
+    <a class="hover:bg-zinc-600 transition-all duration-300  rounded px-2 rounded-xl" href="/AboutUs.html">About</a>
+    <a class="hover:bg-zinc-600 transition-all duration-300  rounded px-2 rounded-xl" href="#">Trending</a>
+    <a class="hover:bg-zinc-600 transition-all duration-300  rounded px-2 rounded-xl" href="#">Contact Us</a>
+    <a class="hover:bg-zinc-600 transition-all duration-300  rounded px-2 rounded-xl" href="/login.html">Get Started</a>
+    </div>
+</nav>
+
+<section class="w-full h-screen">
+    <div class="grid grid-cols-2 px-22">
+        <div>
+            <img class="w-90 ml-12 mt-14" src="https://i.pinimg.com/736x/0b/0e/1d/0b0e1d259527e5d82f208ac2e7b8609b.jpg " alt="">
+        </div>
+
+        <div class="mt-18">
+            <h2 class="font-bold text-4xl mt-18">Contact Us</h2>
+            <p class="text-lg mt-10">Our mission is to empower students to overcome learning setbacks, regain confidence, and achieve their full potential. We are dedicated to making a positive impact on their educational journey and helping them thrive in a rapidly changing world.</p>
+        </div>
+    </div>
+</section>
+
+<section class="w-full h-screen">
+    <div class="grid grid-cols-2 gap-12 px-10">
+    <div class="w-full max-w-xl ml-12 mt-18">
+    <form action="" method="post" class="space-y-6">
+    
+    <!-- First & Last Name -->
+    <div class="grid grid-cols-2 gap-6">
+        <div>
+        <label for="firstName" class="block text-sm font-medium">First Name</label>
+        <input type="text" name="firstName" id="firstName" placeholder="First Name"
+            class="border-1 border-gray-300 w-full px-4 py-2 mt-2 rounded-xl placeholder:font-semibold focus:outline-none focus:border-blue-500">
+        </div>
+        <div>
+        <label for="lastName" class="block text-sm font-medium">Last Name</label>
+        <input type="text" name="lastName" id="lastName" placeholder="Last Name"
+            class="border-1 border-gray-300 w-full px-4 py-2 mt-2 rounded-xl placeholder:font-semibold focus:outline-none focus:border-blue-500">
+        </div>
+    </div>
+
+    <!-- Email -->
+    <div>
+        <label for="email" class="block text-sm font-medium">
+        Email <i class="ri-asterisk text-red-600 text-[0.6rem] align-top"></i>
+        </label>
+        <input type="email" name="email" id="email" placeholder="Email"
+        class="border-1 border-gray-300 w-full px-4 py-2 mt-2 rounded-xl placeholder:font-semibold focus:outline-none focus:border-blue-500">
+    </div>
+
+    <!-- Mobile -->
+    <div>
+        <label for="mobile" class="block text-sm font-medium">
+        Mobile <i class="ri-asterisk text-red-600 text-[0.6rem] align-top"></i>
+        </label>
+        <input type="tel" name="mobile" id="mobile" placeholder="Mobile Number"
+        class="border-1 border-gray-300 w-full px-4 py-2 mt-2 rounded-xl placeholder:font-semibold focus:outline-none focus:border-blue-500">
+    </div>
+
+    <!-- Message -->
+    <div>
+        <label for="message" class="block text-sm font-medium">Message</label>
+        <textarea name="message" id="message" rows="4" placeholder="Write your message..."
+        class="border-1 border-gray-300 w-full px-4 py-2 mt-2 rounded-xl placeholder:font-semibold focus:outline-none focus:border-blue-500"></textarea>
+    </div>
+
+    <!-- Button -->
+    <button type="submit"
+        class="bg-[#7550f5] text-white w-full py-2 rounded-xl mt-4 font-semibold cursor-pointer">Send</button>
+    </form>
+</div>
+
+<div>
+    <img class="w-170 py-20" src="https://i.pinimg.com/1200x/bb/21/65/bb2165761dd2e80ff4c0803c55a95fd6.jpg" alt="">
+</div>
+</section>
+
+<footer class="bg-blue-100">
+<div class="grid grid-cols-3">
+
+<div class="w-160 text-start">
+    <h1 class="text-3xl text-black font-bold p-6">TutorNest</h1>
+    <h3 class="text-md ml-6">Teachers with rich practical knowledge coupled with excellent academic backgrounds are available to shape your child’s future.</h3>
+    <div class="mt-5 ml-3">
+        <a href="https://www.facebook.com/"> <i class="ri-facebook-circle-fill ml-6 text-2xl"></i> </a>
+        <a href="https://www.instagram.com/"><i class="ri-instagram-line ml-6 text-2xl"></i></a>
+        <a href="https://www.linkedin.com/"><i class="ri-linkedin-box-fill ml-6 text-2xl"></i></a>
+        <a href="https://www.twitter.com/"><i class="ri-twitter-x-line ml-6 text-2xl"></i></a>
+    </div>
+</div>
+
+<div class="ml-50 py-3">
+    <h3 class="font-semibold">Company</h3>
+    <a href="/AboutUs.html"><h3 class="mt-4">About Us</h3></a>
+    <h3 class="py-2">Blogs</h3>
+</div>
+
+<div class="ml-22 py-3">
+    <h3 class="font-semibold">Help and Support</h3>
+    <h3 class="mt-4">Contact Us</h3>
+    <h3 class="mt-2">Terms of use</h3>
+    <h3 class="mt-2">Privacy Policy</h3>
+</div>
+</div>
+<hr class="border-t border-gray-800 w-[60%] py-6 ml-66 mt-8">
+</footer>
+</body>
+</html>

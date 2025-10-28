@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="icon" type="image/png" href="/Frontend/image/icon1.png">
+<link rel="stylesheet" href="">
+    <title>Abouts us</title>
+</head>
+<body>
+    <nav id="navbar" class="py-2 px-24 flex justify-between items-center bg-black">
+    <a href="/Frontend/landing.html"><h1 class="text-3xl text-zinc-300 font-bold p-6">TutorNest</h1></a>
+    <div class="flex gap-3 px-14 text-white">
+    <a class="hover:bg-zinc-600 transition-all duration-300 rounded px-2 rounded-xl" href="/landing.html">Home</a>
+    <a class="hover:bg-zinc-600 transition-all duration-300  rounded px-2 rounded-xl" href="#about">About</a>
+    <a class="hover:bg-zinc-600 transition-all duration-300  rounded px-2 rounded-xl" href="#">Trending</a>
+    <a class="hover:bg-zinc-600 transition-all duration-300  rounded px-2 rounded-xl" href="/Contact.html">Contact Us</a>
+    <a class="hover:bg-zinc-600 transition-all duration-300  rounded px-2 rounded-xl" href="/login.html">Get Started</a>
+    </div>
+</nav>
+
+<section class="w-full h-screen bg-blue-100">
+    <h4 class="text-black text-4xl text-center font-extrabold py-6">About Us</h4>
+   <div class="text-center px-36 text-lg space-y-6 mt-14">
+  <h3 class="font-semibold">
+    At TutorNest, we are dedicated to providing comprehensive support and interventions 
+    to mitigate learning losses and ensure every student's educational success. 
+    We understand that disruptions in education can lead to significant gaps in knowledge 
+    and skills, and we are committed to helping students bridge those gaps. 
+    Our team of experienced educators, tutors, and mentors are passionate about 
+    supporting students in their learning journey. We offer targeted instruction, 
+    remedial programs, and personalized tutoring to address specific learning gaps. 
+    Our aim is to provide individualized support and guidance to help students 
+    catch up on missed content and build a solid foundation for future academic achievement.
+  </h3>
+
+  <h3 class="font-semibold">
+    We believe in the power of technology to enhance learning, and we integrate 
+    educational technology into our programs. Through online platforms, interactive 
+    lessons, and digital resources, we create engaging and self-paced learning 
+    environments that cater to each student's unique needs.
+  </h3>
+
+  <h3 class="font-semibold">
+    We recognize the importance of collaboration and engagement from all stakeholders. 
+    We work closely with parents, schools, and the community to ensure a holistic 
+    approach to mitigating learning losses. By involving parents in the learning process 
+    and partnering with local organizations, we create a strong support network 
+    that fosters student success.
+  </h3>
+
+<h3 class="font-semibold">
+    At Flipclass, we are committed to providing not just academic support, 
+    but also addressing the social and emotional well-being of students. 
+    We believe that a supportive and inclusive learning environment is essential 
+    for their overall growth and development.
+</h3>
+</div>
+
+</section>
+
+<section class="w-full h-180 bg-white">
+    <h4 class="text-black text-center text-4xl font-extrabold py-6">Contact Us</h4>
+    <div class="grid grid-cols-2 gap-12">
+    <div class="w-full max-w-xl ml-8">
+    <form action="" method="post" class="space-y-6">
+    
+    <!-- First & Last Name -->
+    <div class="grid grid-cols-2 gap-6">
+        <div>
+        <label for="firstName" class="block text-sm font-medium">First Name</label>
+        <input type="text" name="firstName" id="firstName" placeholder="First Name"
+            class="border-1 border-gray-300 w-full px-4 py-2 mt-2 rounded-xl placeholder:font-semibold focus:outline-none focus:border-blue-500">
+        </div>
+        <div>
+        <label for="lastName" class="block text-sm font-medium">Last Name</label>
+        <input type="text" name="lastName" id="lastName" placeholder="Last Name"
+            class="border-1 border-gray-300 w-full px-4 py-2 mt-2 rounded-xl placeholder:font-semibold focus:outline-none focus:border-blue-500">
+        </div>
+    </div>
+
+    <!-- Email -->
+    <div>
+        <label for="email" class="block text-sm font-medium">
+        Email <i class="ri-asterisk text-red-600 text-[0.6rem] align-top"></i>
+        </label>
+        <input type="email" name="email" id="email" placeholder="Email"
+        class="border-1 border-gray-300 w-full px-4 py-2 mt-2 rounded-xl placeholder:font-semibold focus:outline-none focus:border-blue-500">
+    </div>
+
+    <!-- Mobile -->
+    <div>
+        <label for="mobile" class="block text-sm font-medium">
+        Mobile <i class="ri-asterisk text-red-600 text-[0.6rem] align-top"></i>
+        </label>
+        <input type="tel" name="mobile" id="mobile" placeholder="Mobile Number"
+        class="border-1 border-gray-300 w-full px-4 py-2 mt-2 rounded-xl placeholder:font-semibold focus:outline-none focus:border-blue-500">
+    </div>
+
+    <!-- Message -->
+    <div>
+        <label for="message" class="block text-sm font-medium">Message</label>
+        <textarea name="message" id="message" rows="4" placeholder="Write your message..."
+        class="border-1 border-gray-300 w-full px-4 py-2 mt-2 rounded-xl placeholder:font-semibold focus:outline-none focus:border-blue-500"></textarea>
+    </div>
+
+    <!-- Button -->
+    <button type="submit"
+        class="bg-[#2c2c2c] text-white w-full py-2 rounded-xl mt-4 font-semibold cursor-pointer">Send</button>
+    </form>
+</div>
+
+<div>
+    <img class="w-125" src="https://i.pinimg.com/1200x/52/00/31/52003126898b87006aa263328ffa199d.jpg" alt="">
+</div>
+</div>
+
+</section>
+
+<footer class="bg-blue-100">
+<div class="grid grid-cols-3">
+
+<div class="w-160 text-start">
+    <h1 class="text-3xl text-black font-bold p-6">TutorNest</h1>
+    <h3 class="text-md ml-6">Teachers with rich practical knowledge coupled with excellent academic backgrounds are available to shape your child’s future.</h3>
+    <div class="mt-5 ml-3">
+        <a href="https://www.facebook.com/"> <i class="ri-facebook-circle-fill ml-6 text-2xl"></i> </a>
+        <a href="https://www.instagram.com/"><i class="ri-instagram-line ml-6 text-2xl"></i></a>
+        <a href=""><i class="ri-linkedin-box-fill ml-6 text-2xl"></i></a>
+        <a href=""><i class="ri-twitter-x-line ml-6 text-2xl"></i></a>
+    </div>
+</div>
+
+<div class="ml-50 py-3">
+    <h3 class="font-semibold">Company</h3>
+    <a href="/AboutUs.html"><h3 class="mt-4">About Us</h3></a>
+    <h3 class="py-2">Blogs</h3>
+</div>
+
+<div class="ml-22 py-3">
+    <h3 class="font-semibold">Help and Support</h3>
+    <h3 class="mt-4">Contact Us</h3>
+    <h3 class="mt-2">Terms of use</h3>
+    <h3 class="mt-2">Privacy Policy</h3>
+</div>
+</div>
+<hr class="border-t border-gray-800 w-[60%] py-6 ml-66 mt-8">
+</footer>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/Frontend/image/icon1.png"> 
+    <link rel="stylesheet" href="login.css">
+    <title>Student Dashboard</title>
+</head>
+<body>
+
+<h3 id="flash" class="text-green-500 font-semibold text-lg ml-4 py-2" hidden >Login successful!!!</h3>
+<script>
+    let flash = document.getElementById("flash");
+
+// Show the flash message
+flash.classList.remove("hidden");
+
+// Hide it after 2 seconds
+setTimeout(() => {
+  flash.classList.add("hidden");
+}, 2000);
+</script>
+
+<section class="h-screen w-full bg-zinc-200">
+<div class="grid grid-cols-[20%_50%_30%]">
+    <div class="bg-zinc-100 h-165 py-6 mt-5 rounded-2xl w-70 ml-4">
+    <a href="/landing.html" class="text-3xl text-black font-bold mb-6 ml-12">TutorNest</a>
+    <div class="py-2">
+    <h1 class="font-semibold px-14">Georgie Scott</h1>
+    <h1 class="text-gray-600 text-sm px-12">georgie@gmail.com</h1>
+    </div>
+    <hr class="border border-light text-zinc-200 mt-2">
+    
+
+    <div class="mt-4">
+    <h3 class="text-zinc-600 text-sm px-4 font-semibold">Menu</h3>
+    <h3 class="text-lg text-black font-semibold mb-6 px-14 py-3 transition-all duration-300 hover:scale-105 hover:text-green-500 cursor-pointer"><i class="ri-home-4-fill"></i> Dashboard</h3>
+    <h3 class="text-lg text-black font-semibold mb-6 px-14 py-3 transition-all duration-300 hover:scale-105 hover:text-green-500 cursor-pointer"><i class="ri-book-open-fill"></i> Lessons</h3>
+    <h3 class="text-lg text-black font-semibold mb-6 px-14 py-3 transition-all duration-300 hover:scale-105 hover:text-green-500 cursor-pointer"><i class="ri-file-fill"></i> Assignments</h3>
+    <h3 class="text-lg text-black font-semibold mb-6 px-14 py-3 transition-all duration-300 hover:scale-105 hover:text-green-500 cursor-pointer"><i class="ri-message-2-fill "></i> Messages</h3>
+    <h3 class="text-lg text-black font-semibold mb-6 px-14 py-3 transition-all duration-300 hover:scale-105 hover:text-green-500 cursor-pointer"><i class="ri-settings-3-fill"></i> Settings</h3>
+    <hr class="border border-light text-zinc-200">
+    </div>
+    <button class="border-2 border-gray-400 rounded-2xl px-6 py-2 mt-6 font-semibold ml-8 hover:scale-103 transition-all duration-300 cursor-pointer"><i class="ri-add-line text-gray-400"></i> Start New Course</button>
+    </div>
+
+    <div class="bg-zinc-100 h-80 py-6 mt-5 rounded-xl w-180 ml-3">
+        <div class="flex items-center">
+        <h3 class="font-bold text-2xl ml-6">Hello, Georgie!</h3>
+        <div class="flex items-center gap-3 ml-70">
+        <i class="ri-notification-3-fill text-zinc-700 text-2xl cursor-pointer align-center"></i>
+        <button class="bg-[#44444E] text-white rounded-xl px-7 py-2 font-semibold hover:scale-103 transition-all duration-300 cursor-pointer">Add New Project</button></div>
+        </div>
+
+        <hr class="border border-1 text-zinc-200 mt-6">
+
+        <div class="flex gap-4">
+            <div class="h-40 w-55 rounded-xl mt-7 ml-3 py-10 bg-[url('https://i.pinimg.com/1200x/38/ab/74/38ab74605992a28c4cb3ff83bd058c1b.jpg')] bg-cover bg-center">
+            <h1 class="text-white font-bold text-4xl px-20">500</h1>
+            <h1 class="text-white text-sm ml-18">Hours Spent</h1>
+            </div>
+            
+            <div class="h-40 w-55 rounded-xl mt-7 py-10 bg-[url('https://i.pinimg.com/1200x/d3/7e/3e/d37e3ebd66d484d4af0c6e5750548248.jpg')] bg-cover bg-center">
+            <h1 class="text-white font-bold text-4xl px-22">21</h1>
+            <h1 class="text-white text-sm ml-16">Completed Test</h1>
+            </div>
+
+            <div class="h-40 w-55 rounded-xl mt-7 mr-3 py-10 bg-[url('https://i.pinimg.com/736x/38/a5/eb/38a5ebc11be1f4a5136455a481cf28ac.jpg')] bg-cover bg-center">
+            <h1 class="text-white font-bold text-4xl px-20">43</h1>
+            <h1 class="text-white text-sm ml-18">Total Points</h1>
+            </div>
+        </div>
+
+        <div id="scroll" class="bg-zinc-100 h-82 py-6 mt-14 rounded-xl w-180 mt-12 overflow-y-auto"> 
+            <h1 class="font-bold text-xl px-5">Your Assignments</h1>
+
+            <div class="w-170 h-15 bg-[#7ADAA5] rounded-xl ml-5 mt-4">
+            <h1 class="font-semibold p-4">Color Theory</h1>
+            </div>
+
+            <div class="w-170 h-15 bg-[#E9B3FB] rounded-xl ml-5 mt-4">
+            <h1 class="font-semibold p-4">Composition</h1>
+            </div>
+
+            <div class="w-170 h-15 bg-[#4FB7B3] rounded-xl ml-5 mt-4">
+            <h1 class="font-semibold p-4">UI/UX Writing</h1>
+            </div>
+
+            <div class="w-170 h-15 bg-[#F75270] rounded-xl ml-5 mt-4">
+            <h1 class="font-semibold p-4">Web Development</h1>
+            </div>
+
+            <div class="w-170 h-15 bg-[#AE75DA] rounded-xl ml-5 mt-4">
+            <h1 class="font-semibold p-4">Flutter</h1>
+            </div>
+
+            <div class="w-170 h-15 bg-[#934790] rounded-xl ml-5 mt-4">
+            <h1 class="font-semibold p-4">Algorithms</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-zinc-100 h-165 py-6 mt-5 rounded-2xl w-110">
+        <div class="h-70 w-100 rounded-xl ml-5 py-10 bg-[#B2A5FF] bg-cover bg-center">
+            <div class="ml-8">
+            <h1 class="font-bold">Georgie Scott</h1>
+            <h1>Verified Student</h1>
+            </div>
+        <div class="w-30 h-20 bg-[#E9B3FB] p-6 rounded-xl ml-5 mt-22">
+            <h1>courses</h1>
+        </div>
+
+            </div>
+    </div>
+    
+</div>
+</section>
+
+<footer class="">
+    <div class="bg-[#081526] w-full h-60">
+        <h1 class="text-2xl text-zinc-300 font-bold py-10 text-center">TutorNest</h1>
+    <div class="text-center">
+    <a class="px-4 text-sm text-zinc-300 font-semibold" href="">About us</a>
+    <a class=" px-4 text-sm text-zinc-300 font-semibold" href="#about">Features</a>
+    <a class="px-4 text-sm text-zinc-300 font-semibold" href="#">FAQ's</a>
+    <a class=" px-4 text-sm text-zinc-300 font-semibold" href="">Contact Us</a>
+    <a class=" px-4 text-sm  text-zinc-300 font-semibold" href="#about">Terms of Use</a>
+    <a class=" px-4 text-sm text-zinc-300 font-semibold" href="#">Privacy Policy</a>
+    </div>
+    <hr class="border-t border-gray-200/30 w-[60%] mt-8 ml-72">
+    </div>
+    
+</footer>
+</body>
+</html>
